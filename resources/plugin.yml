@@ -1,0 +1,28 @@
+name: SenyuShop
+version: 1.1.2
+main: senyu.shop.SenyuShopPlugin
+api-version: '26.2'
+description: 森屿商店 - 官方商店与玩家拍卖行(对话框+箱子双界面,拍卖成交累进税)
+author: chenzy05
+softdepend: [Vault, VaultSlim, Essentials]
+commands:
+  shop:
+    description: 打开官方商店
+    usage: /shop
+  ah:
+    description: 玩家拍卖行 (/ah 或 /ah sell <价格>)
+    usage: /ah [sell <价格>]
+  shopchest:
+    description: 箱子界面商店(分类浏览+左键买+右键卖)
+    usage: /shopchest [分类]
+  shopadmin:
+    description: 官方商店管理
+    usage: /shopadmin <addhand|add|price|remove|list>
+    permission: senyushop.admin
+permissions:
+  senyushop.use:
+    description: 使用商店与拍卖行
+    default: true
+  senyushop.admin:
+    description: 管理官方商店
+    default: op
